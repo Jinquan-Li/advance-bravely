@@ -26,7 +26,6 @@ public class BrandAction extends ActionSupport implements ServletRequestAware {
 	private int begien;   //  ��Χ����  ��ʼ	
 	private int last;   // ��Χ����  ���
 	private int brandId;//���Id �޸�
-	private int  ss;
 
 	public Brand getBrand() {
 		return brand;
