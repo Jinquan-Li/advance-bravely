@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+	<package name="UserinfoDemo" extends="struts-default">
+		<action name="user-*" class="userinfoAction"  method="{1}">
+			<result name="list" type="redirectAction">brand-dolist</result>
+			<result name="login">/login.jsp</result>
+		</action>
+		
+		<action name="brand-*" class="brandAction"  method="{1}">
+			<result name="list">/brand.jsp</result>
+			<result name="found">/found.jsp</result>
+			<result name="list2" type="redirectAction">brand-dolist</result>
+		</action>
+		<action name="deploy-*" class="deployAction"  method="{1}">
+			<result name="success">/deploy.jsp</result>
+			<result name="found">/found.jsp</result>
+		</action>
+		
+		</package>
+		
+</struts>

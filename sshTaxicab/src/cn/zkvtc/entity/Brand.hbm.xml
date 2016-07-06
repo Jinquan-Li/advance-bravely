@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.zkvtc.entity.Brand" >
+		<id name="brandId">
+			<generator class="native"></generator>
+		</id>
+		<property name="brandNum" ></property>
+		<property name="brandName" ></property>
+		<property name="brandPrice" ></property>
+		<property name="brandProof" ></property>
+		<property name="brandText" ></property>
+		<property name="deployId" ></property>
+		<many-to-one name="deploy" class="cn.zkvtc.entity.Deploy"/>
+	</class>
+</hibernate-mapping>
